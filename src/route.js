@@ -1,4 +1,3 @@
-// route.js
 import { createRouter, createWebHistory } from 'vue-router';
 import AppHome from './pages/AppHome.vue';
 import AppProjects from './pages/AppProjects.vue';
@@ -15,7 +14,7 @@ const router = createRouter({
     {
       path: '/projects',
       name: 'projects',
-      component: AppProjects, // Assicurati che il nome del componente sia corretto
+      component: AppProjects, 
     },
     {
       path: '/projects/:slug',
