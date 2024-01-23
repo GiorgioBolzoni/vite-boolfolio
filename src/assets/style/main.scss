@@ -11,3 +11,31 @@ $fa-font-path: '../webfonts';
 img{
     width:100%;
 }
+h1{
+    color: var(--orange-web);
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.social{
+    color: var(--steel-blue);
+    &:hover{
+    color: var(--orange-web);
+}
+}
+.icon{
+    color: var(--oxford-blue);
+}
+.main{
+    background-color: var(--oxford-blue);
+    color: var(--platinum);
+    height: calc(100vh - 180px);    
+    position: relative;
+}
+
+// TYPES
+
+.bg-type{
+    background-color: var(--bordeaux);
+}

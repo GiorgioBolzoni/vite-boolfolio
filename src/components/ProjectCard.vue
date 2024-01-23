@@ -1,14 +1,13 @@
 <template>
-    <div class="card">
+    <div class="card text-center">
         <router-link :to="{name: 'project', params:{ slug: project.slug }}">
         
             <img :src="`${store.imgPath}${project.image}`" :alt="project.title">
             <div class="card-body">
-                
-                   <div>
-                    {{ project.title }}
-            
-                   </div>
+                <div class="proj-title mb-0 h5">
+                {{ project.title }}
+        
+                </div>
             </div>
         </router-link>
     </div>
@@ -30,8 +29,13 @@ import {store} from "../data/store";
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/style/partials/variables' as *;
 .card{
     padding-left: 0;
     padding-right: 0;
+    background-color: var(--rose-quartz);
+}
+.proj-title{
+    color: var(--bordeaux);
 }
 </style>

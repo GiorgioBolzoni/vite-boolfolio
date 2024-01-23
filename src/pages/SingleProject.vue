@@ -1,19 +1,24 @@
 <template>
     <div v-if="project">
     
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between py-3">
-                <h1 class="me-3">{{ project.title }}</h1>
-                <div class="type bg-warning">{{ project.type.name }}</div>
-            </div>
-            <div class="w-100 mb-3">
-                <img :src="store.imgPath + project.image" :alt="project.title">
-            </div>
-            <div class="d-flex column-gap-3 mb-3">
-    
+        <div class="py-3 container">
+            <h1 class="me-3">{{ project.title }}</h1>
+
+            <div class="d-flex align-items-center justify-content-around py-3">
+                <div class="type bg-type">{{ project.type.name }}</div>
                 <div v-for="technology in project.technologies" class="tech-tag bg-success">
                     {{ technology.name }}
                 </div>
+            </div>
+            <div class="w-100 my-3 text-center">
+                <img :src="store.imgPath + project.image" :alt="project.title">
+            </div>
+            <p class="w-100 my-3 text-center">
+                {{ project.body }}
+            </p>
+            <div class="d-flex column-gap-3 mb-3">
+    
+                
             </div>
     
         </div>
@@ -46,10 +51,24 @@
                 })  
              }
             },
+           // mounted(){
+         //     this.$watch(() => this.$route.params, (toParams, previousParams) => {
+         //  if(toParams !== previousParams){
+           //  this.getProduct();
+         //      }
+         //   }
+         // )
+            // watch: {
+            //     'this.$route.params.slug': function (newSlug, oldSlug) {
+            //     if (newSlug !== oldSlug) {
+            //         this.getProjectData();
+            //     }
+            //     },
+            // },
             mounted(){
                 this.getProjectData();
             }
-        }
+        };
     </script>
     
     <style lang="scss" scoped>
