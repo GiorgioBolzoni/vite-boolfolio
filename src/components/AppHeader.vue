@@ -37,7 +37,10 @@
                      {
                          label:"Projects",
                          name:"projects",
- 
+                        },
+                     {
+                        label: "Contacts",
+                        name: 'contacts',
                      }
                  ]
              }
