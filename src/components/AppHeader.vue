@@ -52,13 +52,13 @@
  @use '../assets/style/partials/variables' as *;
     nav{
         height: 60px ;
-        background-color: var(--black-ff) ;
+        background-color: var(--eerie-black) ;
         color: var(--platinum);
         .navbar-brand{
             color: var(--platinum);
         }
         li a:hover{
-            color: var(--orange-web) !important;
+            color: var(--saffron) !important;
         }
     }
  </style>

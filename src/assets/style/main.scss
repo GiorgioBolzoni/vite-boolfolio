@@ -12,24 +12,24 @@ img{
     width:100%;
 }
 h1{
-    color: var(--orange-web);
+    color: var(--saffron);
     text-align: center;
 }
 a{
     text-decoration: none;
 }
 .social{
-    color: var(--steel-blue);
+    color: var(--alabaster);
     &:hover{
-    color: var(--orange-web);
+    color: var(--saffron);
 }
 }
 .icon{
-    color: var(--oxford-blue);
+    color: var(--alabaster);
 }
 .main{
-    background-color: var(--oxford-blue);
-    color: var(--platinum);
+    background-color: var(--jet);
+    color: var(--alabaster);
     height: calc(100vh - 180px);    
     position: relative;
 }

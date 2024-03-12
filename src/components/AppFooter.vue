@@ -27,7 +27,7 @@ import {store} from "../data/store";
 <style lang="scss" scoped>
 @use '../assets/style/partials/variables' as *;
     footer{
-        background-color: black;
+        background-color: var(--eerie-black);
         color: white;
         height: 120px;
         position: fixed;
